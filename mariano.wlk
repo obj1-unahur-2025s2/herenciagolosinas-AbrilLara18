@@ -63,4 +63,7 @@ object mariano {
 	method tieneGolosinaDeSabor(_sabor) {
 		return golosinas.any({_golosina => _golosina.sabor() == _sabor})
 	}
+	method bañarGolosina(golosina){
+		self.comprar(new GolosinaBaniada(golosinaInterior= golosina)) 
+	}
 }
